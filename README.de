@@ -1,0 +1,85 @@
+# IRMF Theorie-konsistente Modellauswahl
+
+Dieses Repository enthaelt ein eigenstaendiges Python-Skript fuer ein
+IRMF-Experiment (Intrinsic Residual Multiscale Filtering) auf einem verrauschten
+AM-FM-Chirp-Signal.
+
+Das Hauptskript ist:
+
+```bash
+IRMF Github.py
+```
+
+## Ziel
+
+Das Skript untersucht eine theorie-konsistente Auswahl der IRMF-Parameter. Es
+sucht ueber die Anfangsbandbreite `h1`, den geometrischen Faktor `a`, die
+maximale Kaskadentiefe `max_K` und den Strafparameter `lambda_K`.
+
+Die Bandbreiten folgen der geometrischen Nebenbedingung:
+
+```text
+h_k = h1 / a^k,  mit  1 < a <= 2
+```
+
+## Was das Skript macht
+
+- erzeugt ein synthetisches verrauschtes AM-FM-Chirp-Signal,
+- berechnet eine IRMF-Residualkaskade mit periodischer lokaler Glaettung,
+- waehlt die Modellparameter ohne Nutzung der AM-FM-Wahrheit aus,
+- bewertet Kandidaten mit einem standardisierten unueberwachten Score,
+- vergleicht zusaetzlich eine Referenz nach Residual-Whiteness,
+- erzeugt Diagnostikplots als transparente PNG-Dateien,
+- fuehrt AM-FM-Validierung erst nach der Auswahl durch.
+
+## Abhaengigkeiten
+
+```bash
+pip install numpy scipy matplotlib
+```
+
+Alternativ, falls `requirements.txt` verwendet wird:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Ausfuehrung
+
+Im Projektordner:
+
+```bash
+python3 "IRMF Github.py"
+```
+
+Die Ausgaben werden in folgendem Ordner gespeichert:
+
+```text
+IRMF17S_maxK_sensitivity_geometric_constraint_plots/
+```
+
+## Wichtige Konfiguration
+
+Im Skript sind unter `Main configuration` die wichtigsten Parameter definiert:
+
+```python
+rho_type = "l2"
+h1_candidates = np.linspace(0.04, 0.28, 50)
+a_candidates = np.linspace(1.05, 2.0, 50)
+max_K_candidates = [4, 5, 6, 7, 8, 9, 10]
+lambda_K_candidates = [0.0, 0.05, 0.10, 0.20, 0.50, 1.0, 2.0]
+```
+
+Der Zufallsgenerator wird mit `np.random.seed(0)` fixiert, damit die Ergebnisse
+reproduzierbar sind.
+
+## Hinweis zur Validierung
+
+Die AM-FM-Wahrheit und das saubere Signal werden nicht fuer die Modellauswahl
+verwendet. Sie dienen nur zur nachtraeglichen Validierung und zur optionalen
+Simulation-Recovery-Diagnostik.
+
+## Lizenz
+
+Falls das Projekt oeffentlich auf GitHub veroeffentlicht wird, sollte noch eine
+passende Lizenzdatei ergaenzt werden, zum Beispiel `LICENSE`.
