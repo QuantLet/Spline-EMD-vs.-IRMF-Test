@@ -33,7 +33,7 @@ def save_current_plot(title):
 
 
 # ============================================================
-# IRMF 评估体系
+# 评估体系
 # ============================================================
 def evaluate_decomposition_performance_emd(Y_observed, X_clean, imfs, final_res, fs):
     imfNo = len(imfs)
@@ -92,7 +92,7 @@ def evaluate_decomposition_performance_emd(Y_observed, X_clean, imfs, final_res,
     # --------------------------------------------------------
     # 其他指标
     # --------------------------------------------------------
-    # 💎 1. 频域功率谱互相关系数 (Spectral Pearson Correlation)
+    # 1. 频域功率谱互相关系数 (Spectral Pearson Correlation)
     psd_recon = np.abs(np.fft.rfft(X_recon_denoise)) ** 2
     psd_clean = np.abs(np.fft.rfft(X_clean)) ** 2
     if np.std(psd_recon) > 0 and np.std(psd_clean) > 0:
@@ -100,12 +100,12 @@ def evaluate_decomposition_performance_emd(Y_observed, X_clean, imfs, final_res,
     else:
         spectral_corr = 0.0
 
-    # 💎 2. 能量守恒百分比 (Energy Conservation Ratio, ECR)
+    # 2. 能量守恒百分比 (Energy Conservation Ratio, ECR)
     energy_components = np.sum([np.sum(c ** 2) for c in all_components])
     energy_observed = np.sum(Y_observed ** 2)
     energy_ratio = (energy_components / (energy_observed + 1e-10)) * 100.0
 
-    # 💎 3. 相邻模态最大泄露指数 (Max Adjacent Mode Leakage)
+    # 3. 相邻模态最大泄露指数 (Max Adjacent Mode Leakage)
     max_leakage = 0.0
     if imfNo > 1:
         for i in range(imfNo - 1):
@@ -150,7 +150,7 @@ def export_spectral_overlap_chart_emd(imfs, fs, noise_label, file_prefix):
     plt.legend(loc="upper right", frameon=False, ncol=3, fontsize=8)
     plt.tight_layout()
 
-    # 统一采用平台安全的底层保存逻辑
+    # 统一保存
     save_current_plot(f"{file_prefix}_spectral_overlap")
 
 
@@ -216,7 +216,7 @@ if __name__ == "__main__":
     # 运行并导出 EMD 在强噪环境下的 Filter Bank 功率谱特征图
     export_spectral_overlap_chart_emd(imfs_020, fs, "Strong", "emd_run_strong")
 
-    # 将双噪声结果打包
+    # 将双噪声结果结合
     grid_summary_results.append({
         "h1": 0.0,
         "a_str": "Standard",
