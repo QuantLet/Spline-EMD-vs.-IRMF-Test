@@ -1,0 +1,278 @@
+{
+  "theory_best": {
+    "method": "IRMF",
+    "run_id": 36,
+    "imf_count": 4,
+    "general_physical_score": 0.2842294726379526,
+    "snr_gain_db": 3.018511164672052,
+    "output_snr_db": 13.867228769579619,
+    "input_snr_db": 10.848717604907566,
+    "frequency_spacing_penalty": 0.0,
+    "frequency_spacing_mean_ratio": 0.47810438345946316,
+    "frequency_spacing_min_ratio": 0.43653276292461446,
+    "strict_io": 0.48780909295345315,
+    "spectral_leakage": 0.10187984305842239,
+    "ifs": 0.5474024022135311,
+    "frequency_overlap_matrix": [
+      [
+        0.9999999999999991,
+        0.604373217032592,
+        0.3904958359489335,
+        0.0027882962968393144
+      ],
+      [
+        0.604373217032592,
+        0.9999999999999997,
+        0.8015193581647335,
+        0.011458270408813667
+      ],
+      [
+        0.3904958359489335,
+        0.8015193581647335,
+        0.9999999999999989,
+        0.5068256945622518
+      ],
+      [
+        0.0027882962968393144,
+        0.011458270408813667,
+        0.5068256945622518,
+        0.9999999999999998
+      ]
+    ],
+    "frequency_overlap_mean_offdiag": 0.38624344540236066,
+    "frequency_overlap_max_offdiag": 0.8015193581647335,
+    "frequency_overlap_adjacent_mean": 0.6375727565865258,
+    "frequency_overlap_adjacent_max": 0.8015193581647335,
+    "denoise_mse": 0.02052329687509993,
+    "denoise_psnr": 16.87752872622812,
+    "imf_recovery_matched_count": 1,
+    "imf_recovery_corr": 0.6973203530045117,
+    "imf_recovery_rmse": 0.5626283803600909,
+    "denoise_corr": 0.9842301941085936,
+    "energy_ratio": 0.3209904473229269,
+    "center_freqs": [
+      2.799780545595706,
+      5.08963114070639,
+      11.25714191504074,
+      19.97834332563882
+    ],
+    "imf_energy_ratios": [
+      0.1399336284381242,
+      0.36898861720787907,
+      0.14586099419875082,
+      0.3452167601552343
+    ],
+    "local_theory_score": 0.0819405069359183,
+    "operator_score": 0.4664638387017801,
+    "theory_diagnostic_score": 0.22987112528502998,
+    "final_trace_norm": 0.7971324728950296,
+    "final_contraction": 0.8862205939963996,
+    "operator_evolution_mean_b0_scale": 0.37404175717608235,
+    "operator_evolution_final_residual_energy": 0.2880239318911173,
+    "operator_evolution_max_contraction": 0.8868487683032461,
+    "operator_evolution_mean_contraction": 0.7540835423722718,
+    "operator_evolution_final_trace_norm": 0.2880239318911173,
+    "median_b0": 5.688181132962157e-17,
+    "max_b0": 1.1309824936800717e-13
+  },
+  "physical_best": {
+    "method": "IRMF",
+    "run_id": 34,
+    "imf_count": 4,
+    "general_physical_score": 0.26663664396188336,
+    "snr_gain_db": 3.9124120715775916,
+    "output_snr_db": 14.761129676485158,
+    "input_snr_db": 10.848717604907566,
+    "frequency_spacing_penalty": 0.0,
+    "frequency_spacing_mean_ratio": 0.46179682797934296,
+    "frequency_spacing_min_ratio": 0.3246030384826102,
+    "strict_io": 0.4685825452487034,
+    "spectral_leakage": 0.09637004151289526,
+    "ifs": 0.6125031050363214,
+    "frequency_overlap_matrix": [
+      [
+        0.9999999999999996,
+        0.5995994426385873,
+        0.2783798318120646,
+        0.003017752254459709
+      ],
+      [
+        0.5995994426385873,
+        0.9999999999999991,
+        0.5990392310296901,
+        0.019722189017325868
+      ],
+      [
+        0.2783798318120646,
+        0.5990392310296901,
+        0.9999999999999984,
+        0.7494957546943873
+      ],
+      [
+        0.003017752254459709,
+        0.019722189017325868,
+        0.7494957546943873,
+        0.9999999999999993
+      ]
+    ],
+    "frequency_overlap_mean_offdiag": 0.37487570024108585,
+    "frequency_overlap_max_offdiag": 0.7494957546943873,
+    "frequency_overlap_adjacent_mean": 0.649378142787555,
+    "frequency_overlap_adjacent_max": 0.7494957546943873,
+    "denoise_mse": 0.016705406065578212,
+    "denoise_psnr": 17.771429633133657,
+    "imf_recovery_matched_count": 1,
+    "imf_recovery_corr": 0.6866159062077622,
+    "imf_recovery_rmse": 0.5733316558608064,
+    "denoise_corr": 0.9870479271485241,
+    "energy_ratio": 0.32719801212000743,
+    "center_freqs": [
+      2.8894318193390536,
+      5.246213486508956,
+      13.505597149966484,
+      19.996532290616578
+    ],
+    "imf_energy_ratios": [
+      0.228229592080896,
+      0.3228551336846443,
+      0.15379347000808455,
+      0.2951218042263637
+    ],
+    "local_theory_score": 0.08601776179908463,
+    "operator_score": 0.4631097474728127,
+    "theory_diagnostic_score": 0.2353434473724378,
+    "final_trace_norm": 0.7886456634177368,
+    "final_contraction": 0.8849389846979061,
+    "operator_evolution_mean_b0_scale": 0.3923469769635275,
+    "operator_evolution_final_residual_energy": 0.30593080891014096,
+    "operator_evolution_max_contraction": 0.8591160662866043,
+    "operator_evolution_mean_contraction": 0.7433864841861512,
+    "operator_evolution_final_trace_norm": 0.30593080891014096,
+    "median_b0": 5.699838555841861e-17,
+    "max_b0": 1.2499934810721838e-12
+  },
+  "theory_best_operator_evolution": [
+    {
+      "k": 1,
+      "h": 0.18,
+      "trace_proxy": 393.2503689197292,
+      "trace_norm_proxy": 0.7865007378394584,
+      "operator_norm_proxy": 0.8868487683032461,
+      "contraction_ratio": 0.8868487683032461,
+      "inter_scale_contraction": NaN,
+      "residual_energy_ratio": 0.7865007378394584,
+      "component_energy_ratio": 0.04491735798785755,
+      "b0_scale_proxy": 0.21193715575595165,
+      "before_norm": 16.310023555371178,
+      "after_norm": 14.46452430107786,
+      "component_norm": 3.4567000026379415
+    },
+    {
+      "k": 2,
+      "h": 0.09,
+      "trace_proxy": 321.35770637483097,
+      "trace_norm_proxy": 0.6427154127496619,
+      "operator_norm_proxy": 0.8016953366162032,
+      "contraction_ratio": 0.8016953366162032,
+      "inter_scale_contraction": 0.8016953366106606,
+      "residual_energy_ratio": 0.6427154127496619,
+      "component_energy_ratio": 0.1505934013741543,
+      "b0_scale_proxy": 0.38806365634713824,
+      "before_norm": 14.46452430107786,
+      "after_norm": 11.596141678545866,
+      "component_norm": 5.6131561875983085
+    },
+    {
+      "k": 3,
+      "h": 0.045,
+      "trace_proxy": 312.92866569396017,
+      "trace_norm_proxy": 0.6258573313879203,
+      "operator_norm_proxy": 0.7911114532044367,
+      "contraction_ratio": 0.7911114532044367,
+      "inter_scale_contraction": 0.7911114531976144,
+      "residual_energy_ratio": 0.6258573313879203,
+      "component_energy_ratio": 0.09262184511784637,
+      "b0_scale_proxy": 0.304338372739237,
+      "before_norm": 11.596141678545866,
+      "after_norm": 9.173840494878956,
+      "component_norm": 3.5291508885022926
+    },
+    {
+      "k": 4,
+      "h": 0.0225,
+      "trace_proxy": 144.01196594555864,
+      "trace_norm_proxy": 0.2880239318911173,
+      "operator_norm_proxy": 0.5366786113652011,
+      "contraction_ratio": 0.5366786113652011,
+      "inter_scale_contraction": 0.536678611359351,
+      "residual_energy_ratio": 0.2880239318911173,
+      "component_energy_ratio": 0.3502601967646641,
+      "b0_scale_proxy": 0.5918278438620025,
+      "before_norm": 9.173840494878956,
+      "after_norm": 4.923403977677487,
+      "component_norm": 5.429334240018139
+    }
+  ],
+  "physical_best_operator_evolution": [
+    {
+      "k": 1,
+      "h": 0.18,
+      "trace_proxy": 369.04020767500356,
+      "trace_norm_proxy": 0.7380804153500071,
+      "operator_norm_proxy": 0.8591160662866043,
+      "contraction_ratio": 0.8591160662866043,
+      "inter_scale_contraction": NaN,
+      "residual_energy_ratio": 0.7380804153500071,
+      "component_energy_ratio": 0.07467626883580242,
+      "b0_scale_proxy": 0.2732695900356747,
+      "before_norm": 16.310023555371178,
+      "after_norm": 14.012203277932342,
+      "component_norm": 4.457033450448479
+    },
+    {
+      "k": 2,
+      "h": 0.09,
+      "trace_proxy": 325.49821071986355,
+      "trace_norm_proxy": 0.6509964214397271,
+      "operator_norm_proxy": 0.8068434925326492,
+      "contraction_ratio": 0.8068434925326492,
+      "inter_scale_contraction": 0.806843492526891,
+      "residual_energy_ratio": 0.6509964214397271,
+      "component_energy_ratio": 0.14312472699085005,
+      "b0_scale_proxy": 0.3783182879458511,
+      "before_norm": 14.012203277932342,
+      "after_norm": 11.305655030844365,
+      "component_norm": 5.301072754456606
+    },
+    {
+      "k": 3,
+      "h": 0.045,
+      "trace_proxy": 284.6172091088332,
+      "trace_norm_proxy": 0.5692344182176664,
+      "operator_norm_proxy": 0.7544762542462081,
+      "contraction_ratio": 0.7544762542462081,
+      "inter_scale_contraction": 0.7544762542395347,
+      "residual_energy_ratio": 0.5692344182176664,
+      "component_energy_ratio": 0.10472883428166212,
+      "b0_scale_proxy": 0.32361834664557615,
+      "before_norm": 11.305655030844365,
+      "after_norm": 8.529848259471255,
+      "component_norm": 3.6587173888270934
+    },
+    {
+      "k": 4,
+      "h": 0.0225,
+      "trace_proxy": 152.96540445507048,
+      "trace_norm_proxy": 0.30593080891014096,
+      "operator_norm_proxy": 0.5531101236791431,
+      "contraction_ratio": 0.5531101236791431,
+      "inter_scale_contraction": 0.5531101236726588,
+      "residual_energy_ratio": 0.30593080891014096,
+      "component_energy_ratio": 0.3530518726763412,
+      "b0_scale_proxy": 0.5941816832270078,
+      "before_norm": 8.529848259471255,
+      "after_norm": 4.71794542576047,
+      "component_norm": 5.068279596483593
+    }
+  ]
+}

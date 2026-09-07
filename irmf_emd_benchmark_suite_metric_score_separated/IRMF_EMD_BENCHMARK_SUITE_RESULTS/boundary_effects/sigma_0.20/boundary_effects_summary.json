@@ -1,0 +1,278 @@
+{
+  "IRMF_periodic": {
+    "method": "IRMF",
+    "run_id": 15,
+    "imf_count": 5,
+    "general_physical_score": 0.1582000154194524,
+    "snr_gain_db": 4.057519174694786,
+    "output_snr_db": 19.002858839595863,
+    "input_snr_db": 14.945339664901077,
+    "frequency_spacing_penalty": 0.0,
+    "frequency_spacing_mean_ratio": 0.6581362241490729,
+    "frequency_spacing_min_ratio": 0.4982558465980905,
+    "strict_io": 0.260678863955894,
+    "spectral_leakage": 0.011760147204693712,
+    "ifs": 0.8177564824684836,
+    "frequency_overlap_matrix": [
+      [
+        0.9999999999999997,
+        0.026631129908064478,
+        0.0003490528210620856,
+        1.920481908950331e-05,
+        2.5548610849554775e-06
+      ],
+      [
+        0.026631129908064478,
+        0.9999999999999978,
+        0.5138666307566827,
+        0.07605104171898851,
+        0.0009084421229445199
+      ],
+      [
+        0.0003490528210620856,
+        0.5138666307566827,
+        0.9999999999999943,
+        0.36713352210089994,
+        0.01858138488307632
+      ],
+      [
+        1.920481908950331e-05,
+        0.07605104171898851,
+        0.36713352210089994,
+        0.9999999999999784,
+        0.2515889638627957
+      ],
+      [
+        2.5548610849554775e-06,
+        0.0009084421229445199,
+        0.01858138488307632,
+        0.2515889638627957,
+        0.999999999999968
+      ]
+    ],
+    "frequency_overlap_mean_offdiag": 0.12551319278546885,
+    "frequency_overlap_max_offdiag": 0.5138666307566827,
+    "frequency_overlap_adjacent_mean": 0.28980506165711073,
+    "frequency_overlap_adjacent_max": 0.5138666307566827,
+    "denoise_mse": 0.016156464339577337,
+    "denoise_psnr": 24.90154926682964,
+    "imf_recovery_matched_count": 0,
+    "imf_recovery_corr": NaN,
+    "imf_recovery_rmse": NaN,
+    "denoise_corr": 0.9793023478085279,
+    "energy_ratio": 0.887052341963617,
+    "center_freqs": [
+      0.19653621018776318,
+      5.542199651048761,
+      11.04586792585866,
+      24.645154081245618,
+      64.507187720405
+    ],
+    "imf_energy_ratios": [
+      0.9721221934479399,
+      0.015104480015403527,
+      0.006891893419832112,
+      0.0029065297597495,
+      0.0029749033570734187
+    ],
+    "local_theory_score": 0.08656568273182175,
+    "operator_score": 0.3857052636078707,
+    "theory_diagnostic_score": 0.3078637813908319,
+    "final_trace_norm": 0.4964954910128989,
+    "final_contraction": 0.6716276727935881,
+    "operator_evolution_mean_b0_scale": 0.447088389182024,
+    "operator_evolution_final_residual_energy": 0.6772010786819725,
+    "operator_evolution_max_contraction": 0.8929086633368472,
+    "operator_evolution_mean_contraction": 0.7325754581568402,
+    "operator_evolution_final_trace_norm": 0.6772010786819725,
+    "median_b0": 1.668576735061316e-17,
+    "max_b0": 8.234625711385284e-14,
+    "boundary_signal_energy_ratio": 0.2295361996059195,
+    "boundary_imf_energy_ratio": 0.37967409215553055,
+    "boundary_residual_energy_ratio": 0.3431508676945966,
+    "boundary_reconstruction_error_ratio": 1.3570222758773988e-20,
+    "endpoint_jump_amplification_observed": 0.9451111124976457,
+    "endpoint_jump_amplification_residual": 0.42094390298436346
+  },
+  "IRMF_mirror": {
+    "method": "IRMF",
+    "run_id": 13,
+    "imf_count": 5,
+    "general_physical_score": 0.1876650231862039,
+    "snr_gain_db": 6.1987443467082315,
+    "output_snr_db": 21.14408401160931,
+    "input_snr_db": 14.945339664901077,
+    "frequency_spacing_penalty": 0.0,
+    "frequency_spacing_mean_ratio": 0.6136378034456005,
+    "frequency_spacing_min_ratio": 0.3470912351428431,
+    "strict_io": 0.257918672728379,
+    "spectral_leakage": 0.023495042004661258,
+    "ifs": 0.8119795796027752,
+    "frequency_overlap_matrix": [
+      [
+        0.9999999999999996,
+        0.021114687706259655,
+        0.000573880293379506,
+        0.00041104302236747955,
+        0.00011499788617328434
+      ],
+      [
+        0.021114687706259655,
+        0.9999999999999973,
+        0.45635009862008463,
+        0.2766683000346614,
+        0.007220837566101485
+      ],
+      [
+        0.000573880293379506,
+        0.45635009862008463,
+        0.9999999999999956,
+        0.644704859617758,
+        0.00918854308038741
+      ],
+      [
+        0.00041104302236747955,
+        0.2766683000346614,
+        0.644704859617758,
+        0.999999999999954,
+        0.23478047954727732
+      ],
+      [
+        0.00011499788617328434,
+        0.007220837566101485,
+        0.00918854308038741,
+        0.23478047954727732,
+        0.9999999999999601
+      ]
+    ],
+    "frequency_overlap_mean_offdiag": 0.165112772737445,
+    "frequency_overlap_max_offdiag": 0.644704859617758,
+    "frequency_overlap_adjacent_mean": 0.33923753137284485,
+    "frequency_overlap_adjacent_max": 0.644704859617758,
+    "denoise_mse": 0.009867878855626941,
+    "denoise_psnr": 27.042774438843086,
+    "imf_recovery_matched_count": 0,
+    "imf_recovery_corr": NaN,
+    "imf_recovery_rmse": NaN,
+    "denoise_corr": 0.9876052884465959,
+    "energy_ratio": 0.900287606230949,
+    "center_freqs": [
+      0.32653209253898924,
+      8.648478107314936,
+      13.246074448406883,
+      31.560921437642268,
+      72.53960017309873
+    ],
+    "imf_energy_ratios": [
+      0.9792695970469186,
+      0.01227689891534506,
+      0.004945615769419803,
+      0.0013671539329007788,
+      0.0021407343354138985
+    ],
+    "local_theory_score": 0.09047367255185054,
+    "operator_score": 0.38533249738721,
+    "theory_diagnostic_score": 0.3044693221423571,
+    "final_trace_norm": 0.4947683327044872,
+    "final_contraction": 0.6702134071748979,
+    "operator_evolution_mean_b0_scale": 0.43982720492009647,
+    "operator_evolution_final_residual_energy": 0.6603231721699278,
+    "operator_evolution_max_contraction": 0.9139573173549161,
+    "operator_evolution_mean_contraction": 0.7284864519403186,
+    "operator_evolution_final_trace_norm": 0.6603231721699278,
+    "median_b0": 1.8698599017968284e-17,
+    "max_b0": 4.523123549120893e-13,
+    "boundary_signal_energy_ratio": 0.2295361996059195,
+    "boundary_imf_energy_ratio": 0.21107076581628972,
+    "boundary_residual_energy_ratio": 0.15516297916533123,
+    "boundary_reconstruction_error_ratio": 1.4968929380885218e-20,
+    "endpoint_jump_amplification_observed": 0.9451111124976457,
+    "endpoint_jump_amplification_residual": 0.01722327105745422
+  },
+  "EMD": {
+    "method": "EMD",
+    "run_id": 3,
+    "imf_count": 5,
+    "general_physical_score": 0.23495494213511375,
+    "snr_gain_db": -14.820294319472724,
+    "output_snr_db": 0.12504534542835263,
+    "input_snr_db": 14.945339664901077,
+    "frequency_spacing_penalty": 0.0,
+    "frequency_spacing_mean_ratio": 0.5629534748826475,
+    "frequency_spacing_min_ratio": 0.45364456887180576,
+    "strict_io": 0.02400217226570144,
+    "spectral_leakage": 0.006314230916131777,
+    "ifs": 0.2857886652319185,
+    "frequency_overlap_matrix": [
+      [
+        0.9999999999999942,
+        0.12017590834128807,
+        0.05745605128941064,
+        0.010878860853072976,
+        0.015754419340038232
+      ],
+      [
+        0.12017590834128807,
+        0.9999999999999903,
+        0.15354843473883473,
+        0.021367680724758923,
+        0.024605188691433643
+      ],
+      [
+        0.05745605128941064,
+        0.15354843473883473,
+        0.9999999999999849,
+        0.03531326791227387,
+        0.029383200797833263
+      ],
+      [
+        0.010878860853072976,
+        0.021367680724758923,
+        0.03531326791227387,
+        0.9999999999999981,
+        0.2733874304380354
+      ],
+      [
+        0.015754419340038232,
+        0.024605188691433643,
+        0.029383200797833263,
+        0.2733874304380354,
+        0.999999999999999
+      ]
+    ],
+    "frequency_overlap_mean_offdiag": 0.07418704431269799,
+    "frequency_overlap_max_offdiag": 0.2733874304380354,
+    "frequency_overlap_adjacent_mean": 0.145606260357608,
+    "frequency_overlap_adjacent_max": 0.2733874304380354,
+    "denoise_mse": 1.2477502794167654,
+    "denoise_psnr": 6.023735772662131,
+    "imf_recovery_matched_count": 0,
+    "imf_recovery_corr": NaN,
+    "imf_recovery_rmse": NaN,
+    "denoise_corr": 0.587778865106051,
+    "energy_ratio": 0.08873372037776425,
+    "center_freqs": [
+      164.1106148699596,
+      72.53341065892764,
+      39.62902285175632,
+      10.74301810737386,
+      5.250781454644686
+    ],
+    "imf_energy_ratios": [
+      0.23567989978448367,
+      0.08790561856636893,
+      0.04230151124991902,
+      0.17003695815942615,
+      0.4640760122397852
+    ],
+    "theory_diagnostic_score": null,
+    "emd_residual_trend_smoothness": 5.126538925720475e-07,
+    "emd_residual_low_frequency_dominance": 0.9990104366071715,
+    "boundary_signal_energy_ratio": 0.2295361996059195,
+    "boundary_imf_energy_ratio": 0.1811653078060525,
+    "boundary_residual_energy_ratio": 0.2573997718327946,
+    "boundary_reconstruction_error_ratio": 2.3536067626627264e-21,
+    "endpoint_jump_amplification_observed": 0.9451111124976457,
+    "endpoint_jump_amplification_residual": 1.0510874646954953
+  }
+}

@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Matplotlib/local caches
+.mplconfig/
+
+# Logs and process files
+*.log
+*.pid
+
+# Generated benchmark outputs and local data
+IRMF_EMD_PAPER_RESULTS*/
+outputs/
+data/
+figures/
+plots/
+*.jsonl
+
+# Large/archive artifacts
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Temporary files
+tmp*/
+scratch/
